@@ -5,14 +5,35 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>Luzmila Martinez </h2>
-  <img src="assets/imgs/paris.jpg" alt="">
+  <h2>Cesar Aquino</h2>
+
+
+
+
+
+  <button ion-button full (click)="tomarFoto()">
+    <ion-icon name="camera">
+    </ion-icon> &nbsp;
+    Tomar foto
+  </button>
+
+  <img [src]="base64Image" *ngIf="base64Image" alt="" />
+
+
+
+
+
+
+
+
+
+  <img src="assets/imgs/450_1000.jpg" alt="">
   <p>
-    luzmila martinez volando por el cieloo rdando por las rosas
+    This starter project comes with simple tabs-based layout for apps
+    that are going to primarily use a Tabbed UI.
   </p>
   <p>
     Take a look at the <code>src/pages/</code> directory to add or change tabs,
     update any existing page or create new pages.
   </p>
-
 </ion-content>
